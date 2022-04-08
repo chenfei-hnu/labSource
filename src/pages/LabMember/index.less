@@ -1,0 +1,84 @@
+@import '@/styles/mixin.less';
+
+.labMemberWrap {
+  padding: 0 20px;
+  margin: 20px 0;
+  background-color: #fff;
+
+  .options {
+    text-align: center;
+    padding: 45px 0;
+
+    .option {
+      vertical-align: top;
+
+      &.selected {
+        button {
+          color: #f00;
+        }
+      }
+
+      button {
+        margin: 0 20px;
+        font-size: 20px;
+        padding: 0 15px;
+        color: #333;
+        height: 24px;
+        vertical-align: top;
+        line-height: 24px;
+
+        &:hover {
+          color: #f00;
+        }
+      }
+
+      .split {
+        background: #999;
+        width: 1px;
+        height: 28px;
+        display: inline-block;
+      }
+    }
+  }
+
+  .list {
+    padding-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .item {
+      margin-bottom: 20px;
+      flex: 0 0 50%;
+
+      .pic {
+        display: inline-block;
+        width: 180px;
+        vertical-align: top;
+
+        img {
+          margin: 10px 0;
+          width: 180px;
+          height: 240px;
+          display: inline-block;
+        }
+      }
+
+      .info {
+        display: inline-block;
+        width: calc(100% - 180px);
+        padding: 20px;
+
+        div {
+          line-height: 30px;
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+
+        .name {
+          font-size: 24px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

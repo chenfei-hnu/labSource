@@ -1,0 +1,24 @@
+{
+  "extends": [
+    "stylelint-config-standard"
+  ],
+  "rules": {
+    "max-empty-lines": 4,
+    "string-quotes": "single",
+    "declaration-colon-newline-after": null,
+    "at-rule-no-unknown": null,
+    "value-list-comma-newline-after": null,
+    "no-descending-specificity": null,
+    "selector-class-pattern": "^[a-z][a-zA-Z0-9_-]+$",
+    "selector-id-pattern": "^[a-z][a-zA-Z0-9_-]+$",
+    "font-family-name-quotes": "always-unless-keyword",
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": [
+          "global"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "name": "react-cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "lei.liu",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack serve --config ./config/webpack.dev.ts",
+    "dev": "webpack serve --config ./config/webpack.dev.ts",
+    "build": "cross-env NODE_ENV=production webpack  --config  ./config/webpack.prod.ts",
+    "lint": "eslint --ext .tsx,.ts --fix ./src",
+    "test": "jest",
+    "prettier": "node scripts/prettier.ts",
+    "lint:scss": "stylelint './src/**/*.less' --config .stylelintrc",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.6.2",
+    "antd": "^4.16.11",
+    "axios": "^0.21.1",
+    "dva-core": "^2.0.4",
+    "dva-loading": "^3.0.22",
+    "jest-enzyme": "^7.1.2",
+    "moment": "^2.29.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "react-seamless-scroll": "^1.0.3"
+  },
+  "devDependencies": {
+    "@babel/runtime": "^7.15.3",
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
+    "@types/enzyme": "^3.10.10",
+    "@types/jest": "^27.0.3",
+    "@types/node": "^16.6.1",
+    "@types/react": "^17.0.17",
+    "@types/react-dom": "^17.0.9",
+    "@types/react-redux": "^7.1.18",
+    "@types/react-router-dom": "^5.1.8",
+    "@types/webpack": "^5.28.0",
+    "@types/webpack-dev-server": "^3.11.5",
+    "@typescript-eslint/eslint-plugin": "^4.29.1",
+    "@typescript-eslint/parser": "^4.29.1",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.5",
+    "autoprefixer": "^10.4.0",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "commitlint": "^15.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.2.0",
+    "css-minimizer-webpack-plugin": "^3.0.2",
+    "enzyme": "^3.11.0",
+    "enzyme-to-json": "^3.6.2",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jest": "^25.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.2",
+    "husky": "^7.0.4",
+    "jest": "^27.4.3",
+    "less": "^4.1.1",
+    "less-loader": "^10.0.1",
+    "lint-staged": "12.1.2",
+    "mini-css-extract-plugin": "^2.2.0",
+    "mockjs": "^1.1.0",
+    "postcss-loader": "^6.1.1",
+    "prettier": "^2.3.2",
+    "react-loadable": "^5.5.0",
+    "style-loader": "^3.2.1",
+    "stylelint": "^14.1.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^24.0.0",
+    "stylelint-prettier": "^2.0.0",
+    "ts-import-plugin": "^1.6.7",
+    "ts-jest": "^27.0.7",
+    "ts-loader": "^9.2.5",
+    "ts-node": "^10.2.0",
+    "typescript": "^4.3.5",
+    "webpack": "^5.50.0",
+    "webpack-bundle-analyzer": "^4.4.2",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.8.0",
+    "webpackbar": "^5.0.0-3"
+  },
+  "lint-staged": {
+    "src/**/**/*.{ts,tsx}": [
+      "yarn lint",
+      "git add"
+    ],
+    "*.{css,less,scss}": [
+      "yarn lint:scss",
+      "git add"
+    ]
+  },
+  "jest": {
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "globals": {
+      "ts-jest": {
+        "diagnostics": {
+          "warnOnly": true
+        }
+      }
+    },
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/src/$1",
+      "^@root/(.*)$": "<rootDir>/$1",
+      "^@config/(.*)$": "<rootDir>/src/config/$1",
+      "^@utils/(.*)$": "<rootDir>/src/utils/$1",
+      "^@components/(.*)$": "<rootDir>/src/components/$1",
+      "\\.(css|less|sass|scss)$": "<rootDir>/test-config/StyleMock.js",
+      "\\.(jpg|jpeg|png|gif|ico|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/test-config/FileMock.js"
+    },
+    "setupFiles": [
+      "<rootDir>/test-config/index.js",
+      "<rootDir>/test-config/LocalStorageMock.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest",
+      "\\.(css|less|sass|scss)$": "<rootDir>/test-config/StyleMock.js",
+      "\\.(jpg|jpeg|png|gif|ico|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/test-config/FileMock.js"
+    },
+    "verbose": false,
+    "testRegex": ".*\\.(test|spec)\\.(j|tsx?)$",
+    "testPathIgnorePatterns": [
+      "<rootDir>/node_modules/",
+      "<rootDir>/dist/",
+      "<rootDir>/test-config/"
+    ]
+  }
+}

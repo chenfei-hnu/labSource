@@ -1,0 +1,141 @@
+@import '@/styles/mixin.less';
+
+.layoutWrap {
+  width: 100vw;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+
+  .header {
+    display: block;
+    height: 134px;
+    padding: 0;
+    background: url('../../asset/top-bg.jpg') no-repeat center;
+
+    .links {
+      background: #1e283a;
+      width: 100vw;
+      padding: 0 20%;
+      height: 34px;
+      line-height: 34px;
+      text-align: right;
+      margin: 0 auto;
+      color: #a8a8a8;
+      font-size: 12px;
+
+      a {
+        font-size: 12px;
+        margin: 0 15px;
+        color: #c7d3c9;
+        letter-spacing: 0.8px;
+      }
+    }
+
+    .headerContent {
+      width: 1100px;
+      height: 100px;
+      margin: 0 auto;
+
+      .logoContent {
+        display: inline-block;
+        height: 100px;
+
+        .logo {
+          width: 100px;
+          height: 100px;
+          background: url('../../asset/logo.png') no-repeat center;
+          padding: 0;
+          margin: 0;
+          display: inline-block;
+        }
+
+        .name {
+          line-height: 100px;
+          font-size: 30px;
+          color: #fff;
+          font-weight: bold;
+          letter-spacing: 1px;
+          display: inline-block;
+          vertical-align: top;
+          margin: 0 0 0 10px;
+        }
+      }
+
+      .menuWapper {
+        display: inline-block;
+        vertical-align: top;
+        line-height: 100px;
+        border: none;
+        float: right;
+
+        .menu {
+          display: inline-block;
+          background: none;
+        }
+      }
+    }
+  }
+
+  .content {
+    display: block;
+    width: 1100px;
+    margin: 0 auto;
+    min-height: calc(100vh - 274px);
+  }
+
+  .footer {
+    display: block;
+    width: 100vw;
+    height: 140px;
+    background: #1e283a;
+    padding: 0;
+
+    .footerWapper {
+      width: 1100px;
+      margin: 0 auto;
+    }
+
+    .left {
+      float: left;
+      width: 950px;
+
+      .links {
+        width: 100%;
+        height: 70px;
+        border-bottom: #141b27 solid 1px;
+        margin: 0 auto;
+        line-height: 50px;
+        padding-top: 20px;
+
+        b,
+        a {
+          color: #a8a8a8;
+          font-size: 13px;
+          margin-right: 20px;
+        }
+      }
+
+      .copyRight {
+        width: 100%;
+        height: 69px;
+        margin: 0 auto;
+        line-height: 50px;
+        color: #a8a8a8;
+        border-top: #2d3b56 solid 1px;
+      }
+    }
+
+    .right {
+      float: right;
+
+      .qrcode {
+        background: url('../../asset/qrcode.png') no-repeat center;
+        width: 100px;
+        height: 100px;
+        background-size: cover;
+        margin: 20px;
+      }
+    }
+  }
+}
