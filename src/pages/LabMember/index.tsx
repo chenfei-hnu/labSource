@@ -24,8 +24,8 @@ const total = [
     title: '教授，博士生导师',
     type: '导师',
     email: 'chenfeianthony@gmail.com',
-    desc: '现任湖南大学外国语学院英语系教授。主要研究方向：心理语言学、神经语言学、病理语言学、语言习得。已发表SCI/SSCI/EI检索的国际期刊和会议论文20余篇。其领域涉及心理声学、语言科学、大脑和认知科学。',
-    hobby: '无',
+    desc: '现任湖南大学外国语学院英语系教授。主要研究方向：心理语言学、神经语言学、病理语言学、语言习得。已发表SCI/SSCI/EI检索的国际期刊和会议论文30余篇。其领域涉及心理声学、语言科学、大脑和认知科学。',
+    hobby: null,
   },
   {
     name: '郭承禹',
@@ -138,6 +138,14 @@ const total = [
     email: '2541242613@qq.com',
     desc: '2022级硕士生，本科毕业于长沙理工大学',
     hobby: '跑步、轮滑、美食',
+  },
+  {
+    name: '艾雁',
+    title: '硕士生',
+    type: '硕士生',
+    email: '1125428526@qq.com',
+    desc: '2022级硕士生，本科毕业于西北师范大学',
+    hobby: '跑步、美剧',
   },
   {
     name: '徐鹏',
@@ -334,7 +342,8 @@ function LabMember() {
                 <div className={styles.title}>{item.title}</div>
                 <div className={styles.desc}>{item.desc}</div>
                 <div className={styles.tel}>E-mail：{item.email}</div>
-                <div className={styles.hobby}>爱好：{item.hobby}</div>
+                {item.hobby ? <div className={styles.hobby}>爱好：{item.hobby}</div> : null}
+                {item.to ? <div className={styles.to}>毕业去向：{item.to}</div> : null}
               </div>
             </div>
           );

@@ -8,7 +8,7 @@ import SiderMenu from './SiderMenu';
 import styles from './index.less';
 
 function BasicLayout() {
-  const copyRight = `Copyright ©${new Date().getFullYear()} Fei Chen's Research Group @ Hunan University All rights reserved`;
+  const copyRight = `Copyright ©${new Date().getFullYear()} Chen Lab @ Hunan University All rights reserved`;
 
   return (
     <Layout className={styles.layoutWrap}>
@@ -40,6 +40,31 @@ function BasicLayout() {
           <div className={styles.left}>
             <div className={styles.links}>
               <b>友情链接：</b>
+
+              <a
+                title="陈飞官方主页"
+                href="http://grjl.hnu.edu.cn/p/A44DF96C1C0FE43A1347911801CAA96A"
+                target="_blank"
+                rel="noreferrer"
+              >
+                陈飞官方主页
+              </a>
+              <a
+                title="ResearchGate陈飞主页"
+                href="https://www.researchgate.net/profile/Fei_Chen95"
+                target="_blank"
+                rel="noreferrer"
+              >
+                ResearchGate陈飞主页
+              </a>
+              <a
+                title="Google Scholar陈飞主页"
+                href="https://scholar.google.com/citations?user=Z29eyawAAAAJ&hl=zh-CN"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Google Scholar陈飞主页
+              </a>
               <a title="湖南大学" href="http://www.hnu.edu.cn/" target="_blank" rel="noreferrer">
                 湖南大学
               </a>

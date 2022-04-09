@@ -4,6 +4,11 @@ import '../../../mock/homeApi';
 import styles from './index.less';
 import { connect } from 'react-redux';
 import ReactSeamlessScroll from 'react-seamless-scroll';
+import banner0 from '../../asset/home/0.jpg';
+import banner1 from '../../asset/home/1.jpg';
+import banner2 from '../../asset/home/2.jpg';
+import banner3 from '../../asset/home/3.jpg';
+import banner4 from '../../asset/home/4.jpg';
 
 interface INews {
   link: string;
@@ -17,51 +22,33 @@ function Home() {
     setNews([
       {
         link: '',
-        title: 'Advance Science 接收文章',
-        desc: '热烈祝贺课题组邵功磊的文章“Seamlessly Splicing Metallic SnxMo1...',
-        time: '2020-12-29',
+        title: '陈飞课题组（Chen Lab）网页上线',
+        desc: '陈飞课题组网页正式上线，分为首页、研究方向、学术论文、实验室成员、实验室照片、新闻动态等板块，欢迎访问。',
+        time: '2022-04-09',
       },
       {
         link: '',
-        title: 'ACS Applied Nano Materials 接收7文章',
-        desc: '热烈祝贺课题组杨美清和邵功磊的文章“Irregularly Shaped Bimetallic ...',
-        time: '2021-7-9',
+        title: '欢迎四位硕士研究生加入课题组',
+        desc: '欢迎硕士研究生王瑾（外国语言学及应用语言学）、陈子龙（外国语言学及应用语言学）、杨宇（外国语言学及应用语言学）、艾雁（学科教学-英语）加入ChenLab，预祝四位新生在未来的学习和研究中取得进步。',
+        time: '2022-04-01',
       },
       {
         link: '',
-        title: 'Chemistry of Materials 接收文6章',
-        desc: '热烈祝贺课题组邵功磊的文章“Modulated Anisotropic Growth of 2D SnS...',
-        time: '2021-7-9',
+        title: '欢迎四位客座学生访问课题组',
+        desc: '欢迎四位客座学生访问实验室：邓凯方（湖南师范大学外国语学院 博士生）、陈禹风（山东大学外国语学院 博士生）、张雪颖（爱丁堡大学 硕士生）、季玮程（湖南大学文学院 本科生）访问ChenLab，预祝学有所成。',
+        time: '2022-03-26',
+      },
+      {
+        link: 'https://www.bilibili.com/video/BV1PM4y157qM?spm_id_from=333.337.search-card.all.click',
+        title: '走进通道侗族自治县，传承与保护侗族语言文化',
+        desc: '2021年7月22日至28日，为助力乡村振兴，推进少数民族语言开发保护，Chen Lab带领湖南大学外国语学院旧“语”新知实践队来到湖南省怀化市通道侗族自治县，对当地侗语文化保护现状进行走访调查，包括陈飞、郭承禹、范浩坡三位指导教师、7位本科生、2位研究生。依托不同学院的丰富资源及专业知识对少数民族语言开发保护情况进行调研，深入了解现存问题，提出解决策略。 得到了中国青年网的报道。视频地址：https://www.bilibili.com/video/BV1PM4y157qM?spm_id_from=333.337.search-card.all.click',
+        time: '2021-07-28',
       },
       {
         link: '',
-        title: 'Chemistry – An Asian Journal接收5文章',
-        desc: '热烈祝贺课题组刘业茹的文章“Functional Group-induced p-Doping of M...',
-        time: '2021-7-9',
-      },
-      {
-        link: '',
-        title: 'Electrocatalysis 接收文4章',
-        desc: '热烈祝贺课题组卢浩滋的文章“Highly Stable PtPdCu Alloy Nanowire Ne...',
-        time: '2021-7-9',
-      },
-      {
-        link: '',
-        title: 'Materials Technology 接收文章3',
-        desc: '热烈祝贺课题组龚慧敏和罗嵩的文章“New perspectives and designs int...',
-        time: '2021-7-9',
-      },
-      {
-        link: '',
-        title: 'Chemistry of Materials 接收文2...',
-        desc: '热烈祝贺课题组靳媛媛的文章“Na2SO4-Regulated High-Quality Growth of ...',
-        time: '2021-7-9',
-      },
-      {
-        link: '',
-        title: 'Chemistry of Materials 接收文1...',
-        desc: '热烈祝贺课题组邵功磊的文章“Twist Angle-Dependent Optical Response...',
-        time: '2021-7-9',
+        title: '陈飞课题组参加第十四届中国语音学学术会议',
+        desc: '陈飞课题组郭承禹、张瑜、朱敏等成员于2021年7月18号-7月20号前往甘肃兰州参加第十四届中国语音学学术会议（PCC2021），报告了实验室的最新学术成果：Fei CHEN,  Yu ZHANG, Kexuan LI, Feng XU. (2021). "Suprasegmental similarities and differences between infant- and foreigner-directed speech". 第十四届中国语音学学术会议(PCC2021). July 18-20, 2021, Lanzhou, China.',
+        time: '2021-07-20',
       },
     ]);
   }, []);
@@ -73,18 +60,18 @@ function Home() {
       <div className={styles.top}>
         <div className={styles.left}>
           <Carousel autoplay className={styles.images}>
-            <div className={styles.image0}></div>
-            <div className={styles.image1}></div>
-            <div className={styles.image2}></div>
-            <div className={styles.image3}></div>
-            <div className={styles.image4}></div>
+            <img alt="" src={banner0} />
+            <img alt="" src={banner1} />
+            <img alt="" src={banner2} />
+            <img alt="" src={banner3} />
+            <img alt="" src={banner4} />
           </Carousel>
         </div>
         <div className={styles.right}>
           <div className={styles.title}>
             <h2>新闻动态</h2>
             <span className={styles.more}>
-              <a href="news.asp">MORE&gt;&gt;</a>
+              <a href="/#/xwdt">MORE&gt;&gt;</a>
             </span>
           </div>
           <ReactSeamlessScroll className={styles.newWapper}>
@@ -96,11 +83,11 @@ function Home() {
                       {news.map((item) => {
                         return (
                           <li key={item.title}>
-                            <a href={item.link} target="_blank" title={item.title} rel="noreferrer">
+                            <span>
                               <h2>{item.title}</h2>
                               <p>{item.desc}</p>
                               <span>发布时间：{item.time}</span>
-                            </a>
+                            </span>
                           </li>
                         );
                       })}
@@ -115,12 +102,13 @@ function Home() {
       <div className={styles.clear}></div>
       <div className={styles.bottom}>
         <div className={styles.descWapper}>
-          <h2>陈飞课题组 — 实验室</h2>
+          <h2>陈飞课题组——Chen Lab</h2>
           <p>
-            刘松教授于2006年在南开大学化学学院材料化学系获学士学位，2011年在北京大学化学与分子工程学院获得物理化学博士学位，之后到美国凯斯西储大学和新加坡国立大学从事博士后研究。
+            陈飞于2020年9月加入湖南大学外国语学院，现任湖南大学外国语学院英语系教授，博士生导师、博士后合作导师。香港理工大学中文及双语学系博士；美国明尼苏达大学言语-语言-听力科学系访问学者。
           </p>
           <p>
-            2016年10月加入湖南大学化学生物学与纳米医学研究所，化学生物传感与计量国家重点实验室，任湖南大学化学化工学院教授，同年入选湖南省青年百人计划。
+            主要研究方向：心理语言学、神经语言学、病理语言学、一语及二语习得。其领域涉及心理声学、语言科学、大脑和认知科学。欢迎对相关领域感兴趣的本科生、硕士生、博士生和博士后加入Chen
+            Lab。
           </p>
           <span>
             <a href="yjfx.asp">+ 查看更多</a>

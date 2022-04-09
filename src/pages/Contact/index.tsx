@@ -11,10 +11,10 @@ function Contact() {
     <div className={styles.contactWrap}>
       <div className={styles.mainTitle}>联系我们</div>
       <div className={styles.desc}>
-        <span className={styles.bold}>陈飞教授</span>
+        <span className={styles.bold}>陈飞</span>
         <span>湖南大学外国语学院</span>
         <span>湖南省长沙市岳麓区麓山南路2号湖南大学，410082</span>
-        <span>电话：86-13168032677</span>
+        <span>电话：+86-17788926788</span>
         <span>E-mail：chenfeianthony@gmail.com</span>
       </div>
       <div className={styles.position}>

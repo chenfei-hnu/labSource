@@ -4,6 +4,9 @@ import { connect } from 'react-redux';
 
 import yjfx1Pic from '../../asset/yjfx1.jpg';
 import yjfx2Pic from '../../asset/yjfx2.jpg';
+import yjfx3Pic from '../../asset/yjfx3.jpg';
+import yjfx4Pic from '../../asset/yjfx4.jpg';
+import yjfx5Pic from '../../asset/yjfx5.jpg';
 
 function ResearchDirection() {
   return (
@@ -13,48 +16,108 @@ function ResearchDirection() {
         <div className={styles.partWapper}>
           <span className={styles.partTitle}>研究方向概述</span>
           <p>
-            二维材料指的是由单原子层或几个原子层构成的晶体材料。这一领域自2004年石墨烯被发现后开始高速发展，迄今为止人们已经发现了至少几十种性质截然不同的二维材料，涵盖了绝缘体、半导体、金属等不同的属性。二维材料的独特吸引力来自以下方面。
+            陈飞课题组的研究领域主要围绕着人与人交往过程中的“言语链”来展开研究，具体的研究方向多样化，在如下的多个研究方向均有相关论文发表：
+            <div>(1) 一语习得</div>
+            <div>(2) 二语习得</div>
+            <div>(3) 言语感知的心理机制</div>
+            <div>(4) 言语处理的脑神经机制</div>
+            <div>(5) 计算机辅助发音教学系统</div>
+            <div>(6) 病理语言学之机制研究（认知心理机制、神经生理机制）</div>
+            <div>(7) 病理语言学之康复训练</div>
           </p>
           <p>
-            首先，许多二维材料都存在着与之对应的母体材料，即二维材料是依靠层间范德华相互作用堆积而成的层状材料。自1970
-            年(甚至更早)起，层状材料就由于电荷密度波、超导、锂电池等领域的研究颇受关注。当我们把层状材料中的最小单元——
-            一个单层—
-            —制备出来进行研究时，就好比我们打开了一本书取出了一页纸仔细研读。对于二维材料的研究，将很有可能揭开这些层状的母体材料中的谜团。更有意思的是，二维材料的能带结构也可能会与母体材料有所不同，从而使二维材料具有其母体材料不具备的优越性质。另外，二维材料相比于三维体材料对外界的调控敏感得多，这是因为对于二维材料来说，所有的原子都暴露在表面上，没有被藏起来的“体”的部分。二维的体系中也蕴含着三维体系所没有的新的物理。此外，二维材料不光可以从母体材料上解离，还可以按需使其堆叠到一起，形成新的结构，这样的结构称为范德华异质结。这种人工结构大大丰富了材料的属性，可以很方便地制造出自然界不存在的且性能优异的人工材料。
-          </p>
-          <p>
-            本课题组主要研究以低维层状材料为研究对象，利用化学、物理、材料学及生物学的交叉背景，主要解决层状材料及异质结的可控制备，功能化器件的研究，探索层状材料在生物医学领域的潜在应用，并不断扩大层状材料的数据库。
+            陈飞课题组近些年来主要从事言语加工及大脑神经机制的研究，尤其在自闭症人群言语与认知障碍研究方面积累了丰富的经验，熟练掌握行为学实验及脑成像实验的范式与技术。该领域研究成果已发表在Autism
+            Research（2021），Journal of Autism and Developmental Disorders（2021），Journal of
+            Speech Language and Hearing Research（2021a, 2021b, 2021c），Frontiers in
+            Psychology（2020,2021），Language, Cognition and Neuroscience（2020）， PLoS
+            ONE（2019），The Journal of the Acoustical Society of America（2018），IEEE-ACM
+            Transactions on Audio, Speech, and Language Processing（2017），Journal of Child
+            Language（2017）等国际知名期刊。
           </p>
         </div>
         <div className={styles.partWapper}>
-          <span className={styles.partTitle}>低维材料的可控合成</span>
+          <span className={styles.partTitle}>1）基于汉语背景言语感知研究</span>
+          <span className={styles.partSubTitle}>A．健康成人言语感知的心理与神经机制</span>
           <p>
-            能否以低成本生长大面积高质量的二维材料关系到了其是否在应用上有足够的前景，因此，实现材料的可控生长为二维电路及二维器件研究奠定了基础。将借助“古老的化学现象及基本物理化学理论”，开发大规模、高质量制备层状薄膜材料及不同种类异质结的通用方法，包括化学气相沉积（CVD）及溶液湿法制备，扩展层状材料制备的可能性，研究材料的生长机制及拓扑性质，探究单层材料及异质结的物理化学性能，进行人工材料的设计和合成。目前已经成功制备了MoS
-            <sub>2</sub>/WS<sub>2</sub>
-            横向异质结构，发现温度和扩散机制对异质结生长的重要影响，提出了一种异质结生长的新的机制。
+            在言语感知方面，我们在语音范畴化加工研究领域开展了一系列的研究，熟练掌握了范畴化感知的行为学实验范式，且对感知背后的心理与认知机制进行考察与探讨（Chen
+            & Peng，2018. The Journal of the Acoustical Society of America；Chen & Peng，2016.
+            Journal of Signal Processing
+            Systems；陈飞等，2019.《语言科学》）。另外，我们课题组还研究了以普通话母语为背景的健康成年人和失乐症患者在进行声调范畴化感知时的脑电波ERP反映（Chen
+            & Peng，2020. Frontiers in
+            Psychology），通过行为学感知实验，鉴别连续统中的标准刺激、范畴内靶刺激、范畴间靶刺激，进而使用oddball经典范式，成功实现了描述声调范畴化感知程度高低的电生理量化指标（图1）。
           </p>
           <p className={styles.imgWapper}>
             <img alt="" src={yjfx1Pic} />
+            <p>
+              图1.标准刺激、范畴内靶刺激、范畴间靶刺激引发的脑电波变化及脑地形图（Chen & Peng，2020.
+              Frontiers in Psychology）
+            </p>
           </p>
         </div>
         <div className={styles.partWapper}>
-          <span className={styles.partTitle}>功能化器件研究</span>
+          <span className={styles.partSubTitle}>B．健康儿童言语发展性研究</span>
           <p>
-            二维材料蓬勃发展的一个很重要的因素就是其广阔的应用前景。基于半导体二维材料的场效应管相对于现在的硅基场效应管具有几个非常吸引人的优势：第一，二维材料的沟道厚度仅有一层原子，而且面外无悬挂键，使得器件的尺寸可以做到更小，缺陷也更少，意味着更高的密度和更小的功耗；第二，二维材料非常柔软，可以承受很大程度的变形拉伸，可以用作柔性电路材料；第三，二维材料由于厚度极薄透明度很高，可以制作透明的器件。2010年，过渡金属硫化物，黑磷等重新进入研究者的视野，高质量的MoS
-            <sub>2</sub>场效应晶体管也被首次制备，但是迁移率较低。2014
-            年，黑磷场效应管也被成功制备，然而黑磷的弱点是在大气环境中的不稳定性。
-          </p>
-          <p>
-            本课题组致力于发展高性能的场效应晶体管，研究电子在晶体管中的输运性质，通过界面工程对场效应的性质进行有效调控和掺杂，探索性质丰富的范德华异质结的性质。目前通过界面工程制备了高性能的MoS
-            <sub>2</sub>场效应晶体管器件，大幅增强了室温下材料的迁移率。
+            我们团队利用范畴化感知的经典行为学范式，研究四岁~七岁的普通话健康儿童完成相关的声调辨认和区分任务，通过边界位置、边界宽度和区分正确率等参数来量化观察普通话儿童在声调感知上的发展（Chen等，2017.
+            Journal of Child
+            Language）。普通话健康儿童对于声调感知的发展是一个逐步达到成熟和稳定的过程，虽然他们在四岁前对于普通话阴平和阳平之间的感知已经呈现范畴化，然而在六岁时对于普通话阴平和阳平辨认能力才达到了成人水平。
           </p>
         </div>
         <div className={styles.partWapper}>
-          <span className={styles.partTitle}>纳米材料在生物医学中的应用探索</span>
+          <span className={styles.partSubTitle}>C．自闭症人群言语加工的心理及神经机制</span>
           <p>
-            探索纳米材料在生物医学中的应用具有重要的科研意义及广泛的应用前景，课题组致力于应用微纳加工的优势，搭建起材料与生物医学研究的桥梁，如与微流控技术相结合，发展高性能的场效应管器件的生物检测平台技术；测量具有导电性的生物材料（DNA及蛋白质等），拓展生物电子学研究；发展制备低维材料的大量制备技术，利用化学自组装、化学修饰增加纳米材料的生物相容性，拓展材料在癌症治疗，抗菌，疾病早期诊断中的作用。课题组利用超精细的电子束曝光技术成功制备了单分子器件，用于生物相互作用的实时检测，发展了新型的检测平台技术。
+            陈飞课题组曾在研究中采用了范畴感知的行为学实验范式，探究了高功能自闭症青少年对于VOT的范畴化感知（Chen
+            & Peng，2021. Journal of Speech, Language, and Hearing
+            Research）。结果表明高功能的自闭症青少年对于VOT的感知结果范畴化程度较低（图2）；且同年龄的高功能的自闭症青少年对于声调的感知比辅音嗓音起始时间感知的范畴化感知程度要高，该研究支持了前人研究，即自闭症者在音高维度上的声学加工存在优势、而在时间维度上的声学加工存在缺陷。
           </p>
           <p className={styles.imgWapper}>
             <img alt="" src={yjfx2Pic} />
+            <p>
+              图2. 普通话高功能自闭症青少年对于VOT范畴化感知结果（Chen & Peng，2021. Journal of
+              Speech, Language, and Hearing Research）
+            </p>
+          </p>
+          <p>
+            我们课题组最近的一项研究，也运用了事件相关电位以及时频分析技术（图3），探讨了普通话自闭症和健康儿童在感知“婴儿导向式语言（Infant-directed
+            Speech）”时，对于元音三角面积扩大的脑生理反应，论证了自闭症儿童在处理“婴儿导向式语言”这种具有社交性质以及语言学意义的言语信息时存在加工缺陷的脑神经基础。
+          </p>
+          <p className={styles.imgWapper}>
+            <img alt="" src={yjfx3Pic} />
+            <p>
+              图3. 汉语自闭症儿童对于言语和非言语领域内共振峰信息加工的时频分析结果（Chen等，2021.
+              Autism Research）
+            </p>
+          </p>
+        </div>
+        <div className={styles.partWapper}>
+          <span className={styles.partTitle}>2）基于汉语背景言语产出研究</span>
+          <span className={styles.partSubTitle}>A．汉语自闭症人群言语产出研究</span>
+          <p>
+            陈飞课题组采用了行为学模仿任务，考察了普通话背景和粤语背景的自闭症儿童模仿粤语声调及非言语（纯音）时的表现（Chen等，2021.
+            Journal of Autism and Developmental
+            Disorders）。通过声学分析发现，和典型发展儿童相比，自闭症儿童在模仿粤语声调时的音高变化幅度更大。而在模仿非言语时，自闭症者与典型发展儿童无异（图4）。此外，研究也发现声调背景的自闭症儿童无法利用母语音段中的音系知识来提高非母语声调产出的准确性，以上结果都表明：自闭症儿童音高声学加工的非典型性仅存在于言语加工层面。
+          </p>
+          <p className={styles.imgWapper}>
+            <img alt="" src={yjfx4Pic} />
+            <p>
+              图4.自闭症儿童对于言语和非言语音高的模仿产出表现（Chen等，2021. Journal of Autism and
+              Developmental Disorders）
+            </p>
+          </p>
+        </div>
+        <div className={styles.partWapper}>
+          <span className={styles.partSubTitle}>B．自闭症儿童言语康复训练系统</span>
+          <p>
+            我们团队开发了计算机辅助3D虚拟发音人（Chen 等，2019. PLoS
+            One），用来帮助普通话自闭症儿童的发音教学。通过眼动技术观察自闭症儿童在学习时的注意力分配，并开展了康复训练的实证研究，论证了该3D虚拟发音人训练系统的有效性。另外，我们团队也开展了言语康复训练研究，证实了听觉-运动整合训练对于言语能力较低的自闭症儿童语音和词汇习得方面的促进作用，同时在延时后测中对于未训练的词汇学习仍然有效（图5）。这项研究表明，听觉-运动匹配的训练方法相较于传统的单一听觉重复性训练，可以更有效地提高自闭症儿童的声调、声母和韵母产出能力（Yan，Chen
+            等，2021. Journal of Speech, Language, and Hearing Research）。
+          </p>
+          <p className={styles.imgWapper}>
+            <img alt="" src={yjfx5Pic} />
+            <p>
+              图5.
+              听觉-运动匹配的训练方法(MMLI)和单一听觉重复性训练(SRT)对于自闭症儿童在语音和词汇习得上的准确率（Yan，Chen
+              等，2021. Journal of Speech, Language, and Hearing Research）
+            </p>
           </p>
         </div>
       </div>
