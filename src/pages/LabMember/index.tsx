@@ -45,8 +45,8 @@ const total = [
   },
   {
     name: '朱敏',
-    title: '博士',
-    type: '博士',
+    title: '博士生',
+    type: '博士生',
     email: 'minzhuwiki@gmail.com',
     desc: '2022级博士生，本科毕业于西安外国语大学、硕士毕业于湖南大学',
     hobby: '游泳、爬山、旅游',
@@ -54,7 +54,7 @@ const total = [
   {
     name: '邓凯方',
     title: '博士（访问学生）',
-    type: '博士',
+    type: '博士生',
     email: '649557411@qq.com',
     desc: '2022级 湖南师范大学外国语学院 博士生,硕士毕业于湖南师范大学',
     hobby: '美食、旅游',
@@ -62,9 +62,9 @@ const total = [
   {
     name: '陈禹风',
     title: '博士（访问学生）',
-    type: '博士',
+    type: '博士生',
     email: 'yufeng_chen0575@foxmail.com',
-    desc: '2022级 山东大学外国语学院 博士生，硕士毕业于天津师范大学',
+    desc: '2022级 山东大学文学院 博士生，硕士毕业于天津师范大学',
     hobby: '球类运动、动漫',
   },
   {
@@ -273,8 +273,8 @@ const options = [
     value: '博士后',
   },
   {
-    label: '博士',
-    value: '博士',
+    label: '博士生',
+    value: '博士生',
   },
   {
     label: '硕士生',

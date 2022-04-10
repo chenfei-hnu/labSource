@@ -9,6 +9,7 @@ import banner1 from '../../asset/home/1.jpg';
 import banner2 from '../../asset/home/2.jpg';
 import banner3 from '../../asset/home/3.jpg';
 import banner4 from '../../asset/home/4.jpg';
+import { Link } from 'react-router-dom';
 
 interface INews {
   link: string;
@@ -35,7 +36,7 @@ function Home() {
       {
         link: '',
         title: '欢迎四位客座学生访问课题组',
-        desc: '欢迎四位客座学生访问实验室：邓凯方（湖南师范大学外国语学院 博士生）、陈禹风（山东大学外国语学院 博士生）、张雪颖（爱丁堡大学 硕士生）、季玮程（湖南大学文学院 本科生）访问ChenLab，预祝学有所成。',
+        desc: '欢迎四位客座学生访问实验室：邓凯方（湖南师范大学外国语学院 博士生）、陈禹风（山东大学文学院 博士生）、张雪颖（爱丁堡大学 硕士生）、季玮程（湖南大学文学院 本科生）访问ChenLab，预祝学有所成。',
         time: '2022-03-26',
       },
       {
@@ -71,7 +72,7 @@ function Home() {
           <div className={styles.title}>
             <h2>新闻动态</h2>
             <span className={styles.more}>
-              <a href="/#/xwdt">MORE&gt;&gt;</a>
+              <Link to="/xwdt">MORE&gt;&gt;</Link>
             </span>
           </div>
           <ReactSeamlessScroll className={styles.newWapper}>
@@ -111,7 +112,7 @@ function Home() {
             Lab。
           </p>
           <span>
-            <a href="yjfx.asp">+ 查看更多</a>
+            <Link to="/yjfx">+ 查看更多</Link>
           </span>
         </div>
       </div>
