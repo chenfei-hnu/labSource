@@ -22,7 +22,6 @@ function BasicLayout() {
         <div className={styles.headerContent}>
           <div className={styles.logoContent}>
             <p className={styles.logo} />
-            <p className={styles.name}>陈飞课题组</p>
           </div>
           <SiderMenu />
         </div>

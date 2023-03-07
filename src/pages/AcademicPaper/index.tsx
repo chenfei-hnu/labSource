@@ -19,6 +19,106 @@ interface IOption {
 
 const total = [
   {
+    title: 'Development of achieving constancy in lexical tone identification with contextual cues(in press)',
+    author: 'Fei CHEN, Kaile ZHANG*, Qingqing GUO, and Jia LV.',
+    journal: 'Journal of Speech, Language, and Hearing Research.',
+    time: '2023',
+  },
+  {
+    title: '不同二语水平的中国英语学习者情绪词汇语义-韵律加工研究',
+    author: '张高德、陈飞*.',
+    journal: '外语教学与研究',
+    time: '2023',
+  },
+  {
+    title: 'Atypical Prosodic Realization by Mandarin-Speaking Autistic Children: Evidence from Tone Sandhi and Neutral Tone',
+    author: 'Chengyu GUO, Fei CHEN*, Jinting YAN, Xiaotian GAO, and Min ZHU.',
+    journal: 'Journal of Communication Disorders.',
+    link: 'https://doi.org/10.1016/j.jcomdis.2022.106280',
+    time: '2022',
+  },
+  {
+    title: 'Categorical perception of Mandarin lexical tones in language-delayed autistic children',
+    author: 'Yicheng RONG#, Yi WENG#, Fei CHEN#*, and Gang PENG*.',
+    journal: 'Autism.',
+    link: 'https://doi.org/10.1177/1362361322113868',
+    time: '2022',
+  },
+  {
+    title: 'Neurocognitive Dynamics of Prosodic Salience over Semantics during Explicit and ImplicitProcessing of Basic Emotions in Spoken Words',
+    author: 'Lin, Y.; Fan, X.; Chen, Y.; Zhang, H.; Chen, F.; Zhang, H.; Ding, H.*; Zhang, Y*.',
+    journal: 'Brain Sciences.',
+    link: 'https://doi.org/10.3390/brainsci12121706',
+    time: '2022',
+  },
+  {
+    title: 'Learning challenging L2 sounds via computer assisted training: Audiovisual training with an airflow model',
+    author: 'Fei CHEN*, Quansheng XIA, Yan FENG, Lan WANG, and Gang PENG*. ',
+    journal: 'Journal of Computer Assisted Learning. ',
+    link: 'https://doi.org/10.1111/jcal.12724',
+    time: '2022',
+  },
+  {
+    title: 'Musical Training Enhances Categorical Perception of Speech in Preschoolers: Training Duration and Musical Program Matter',
+    author: 'Yao YAO, Xiaoxiang CHEN*, Fei CHEN*, Jiaqiang ZHU.',
+    journal: 'Journal of Speech, Language, and Hearing Research.',
+    link: 'https://doi.org/10.1044/2022_JSLHR-22-00216',
+    time: '2022',
+  },
+  {
+    title: 'Audiovisual Mandarin Lexical Tone Perception in Quiet and Noisy Contexts: The Influence of Visual Cues and Speech Rate',
+    author: 'Manhong LI, Xiaoxiang CHEN*, Jiaqiang ZHU, Fei CHEN*.',
+    journal: 'Journal of Speech, Language, and Hearing Research.',
+    link: 'https://doi.org/10.1044/2022_JSLHR-22-00024',
+    time: '2022',
+  },
+  {
+    title: 'Production of Mandarin consonant aspiration and monophthong in children with autism spectrum disorder',
+    author: 'Yan FENG#, Fei CHEN#, Junzhou MA, Lan WANG, and Gang PENG*.',
+    journal: 'Clinical Linguistics & Phonetics.',
+    link: 'https://doi.org/10.1080/02699206.2022.2099302',
+    time: '2022',
+  },
+  {
+    title: 'Age-related differences of Mandarin tone and consonant aspiration perception in babble noise',
+    author: 'Yaru MENG*, Fei CHEN, Yan FENG, Gang PENG, Wei ZHENG. ',
+    journal: 'Journal of Speech, Language, and Hearing Research.',
+    time: '2022',
+  },
+  {
+    title: 'Phonetic Realizations of Metrical Structure in Tone Languages: Evidence from Chinese Dialects',
+    author: 'Chengyu GUO, Fei CHEN*.',
+    journal: 'Frontiers in Psychology.',
+    link: 'https://doi.org/10.3389/fpsyg.2022.945973',
+    time: '2022',
+  },
+  {
+    title: 'Applying Random Forest classification to diagnose autism using acoustical voice-quality parameters during lexical tone production',
+    author: 'Chengyu GUO, Fei CHEN*, Yajie CHANG, Jinting YAN.',
+    journal: 'Biomedical Signal Processing and Control. ',
+    link: 'https://doi.org/10.1016/j.bspc.2022.103811',
+    time: '2022',
+  },
+  {
+    title: 'Semantics-Prosody Stroop Effect on English Emotion Word Processing in Chinese College Students with Trait Depression',
+    author: 'Fei CHEN*, Jing LIAN, Gaode ZHANG, Chengyu GUO.',
+    journal: 'Frontiers in Psychiatry. ',
+    link: 'https://doi.org/10.3389/fpsyt.2022.889476',
+    time: '2022',
+  },
+  {
+    title: '汉语自闭症儿童声调产出特征的实验研究',
+    author: '阎锦婷、陈飞*、沙莎.',
+    journal: '心理月刊.',
+    time: '2022',
+  },
+  {
+    title: '娄底话双音节词汇中的轻音中和调',
+    author: '郭承禹、陈飞*.',
+    journal: '实验语言学. ',
+    time: '2022',
+  },
+  {
     title:
       'Individuals with Congenital Amusia Show Degraded Speech Perception but Preserved Statistical Learning for Tone Languages',
     author: 'Jiaqiang ZHU, Xiaoxiang CHEN*, Fei CHEN*, & Seth Wiener',
@@ -205,6 +305,10 @@ const total = [
 ];
 
 const options = [
+  {
+    label: '2023',
+    value: '2023',
+  },
   {
     label: '2022',
     value: '2022',

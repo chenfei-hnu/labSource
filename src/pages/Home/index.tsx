@@ -8,7 +8,6 @@ import banner0 from '../../asset/home/0.jpg';
 import banner1 from '../../asset/home/1.jpg';
 import banner2 from '../../asset/home/2.jpg';
 import banner3 from '../../asset/home/3.jpg';
-import banner4 from '../../asset/home/4.jpg';
 import { Link } from 'react-router-dom';
 
 interface INews {
@@ -21,6 +20,18 @@ interface INews {
 function Home() {
   useEffect(() => {
     setNews([
+      {
+        link: '',
+        title: '硕士生张高德以第一作者在《外语教学与研究》发表论文',
+        desc: '陈飞课题组的硕士生张高德同学（第一作者）在2023年第1期《外语教学与研究》发表学术论文《不同二语水平中国英语学习者情绪词汇的语义-韵律加工研究》。《外语教学与研究》由北京外国语大学主办，获评“中国国际影响力优秀学术期刊”，系我国外语类唯一A2期刊。',
+        time: '2023-01-06',
+      },
+      {
+        link: '',
+        title: '课题组博士后获批中国博士后科学基金面上项目资助2项',
+        desc: '6月22日，中国博士后科学基金会公示了第71批面上项目拟资助名单，陈飞课题组郭承禹博士申报的《汉藏濒危语言的词汇韵律数据库建设与研究》和阎锦婷博士申报的《汉语自闭症儿童言语韵律产出特征研究》获得第71批面上项目二等资助。',
+        time: '2022-06-22',
+      },
       {
         link: '',
         title: '陈飞课题组（Chen Lab）网页上线',
@@ -65,7 +76,6 @@ function Home() {
             <img alt="" src={banner1} />
             <img alt="" src={banner2} />
             <img alt="" src={banner3} />
-            <img alt="" src={banner4} />
           </Carousel>
         </div>
         <div className={styles.right}>
